@@ -3,6 +3,7 @@
 @version 0.1
 */
 
+
 /*============================ Fontes ================================*/
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
@@ -10,13 +11,100 @@
 
 /*============================ layout ================================*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
+html,
+body,
+.capa {
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url('img/background-site.png') no-repeat;
+    background-size: cover;
+}
+
 
 /* -- Barra de navegação -- */
 
+.img-logo {
+    width: 200px;
+    background: url('img/icones/crh.svg') no-repeat;
+    display: inline-block;
+    background-size: contain;
+    color: transparent;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.barra-navegacao {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+
+.barra-navegacao ul {
+    float: right;
+    margin-right: 100px;
+}
+
+.barra-navegacao ul li {
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.9s all;
+}
+
+.barra-navegacao ul li a {
+    text-decoration: none;
+    color: #251C1C;
+    padding: 30px;
+}
+
+.barra-navegacao ul li a:hover {
+    text-decoration: none;
+    color: #457B9D;
+}
+
+
+/* -- imagem capa -- */
+
+.capa {
+    display: table;
+    width: 100%;
+}
+
+.texto-capa {
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* -- Botões -- */
+
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-vermelho {
+    background: #E63946;
+}
+
+.btn-vermelho:hover {
+    background-color: #E62948;
+    color: white;
+}
