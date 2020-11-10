@@ -23,13 +23,15 @@ body,
 .capa {
     height: 100%;
     overflow: auto;
+    background-color: #457B9D;
 }
 
-body {
-    width: 100%;
-    height: 100vh;
-    background: url('img/background-site.png') no-repeat;
-    background-size: cover;
+.diferencial h2,
+.sobre-grupo h2 {
+    font-size: 36px;
+    font-weight: 700px;
+    letter-spacing: -0.04em;
+    color: #1D3557;
 }
 
 
@@ -40,6 +42,17 @@ body {
     background: url('img/icones/crh.svg') no-repeat;
     display: inline-block;
     background-size: contain;
+    color: transparent;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.img-logo-rodape {
+    width: 200px;
+    height: 90px;
+    background: url('img/icones/crh.svg'), no-repeat;
+    display: inline-block;
+    background-size: cover;
     color: transparent;
     text-decoration: none;
     margin: 10px;
@@ -86,25 +99,97 @@ body {
     color: white;
     display: table-cell;
     vertical-align: middle;
+    padding: 0px;
+}
+
+.navegacao {
+    width: 100%;
+    height: 120px;
+    background: url('img/back-nav.png') no-repeat;
+    margin: 0px;
 }
 
 
 /* -- Botões -- */
 
-.btn-custom {
-    color: white;
-    border-radius: 500px;
-    -webkit-border-radius: 500px;
-    -moz-border-radius: 500px;
-    text-transform: uppercase;
-    transition: background 0.4s, color 0.4s;
+.botao-orcamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10vh;
 }
 
-.btn-vermelho {
+.estilo-dele {
+    margin: 15px;
+    padding: 2vh;
+    border-radius: 30px;
+    text-decoration: none;
     background: #E63946;
+    border: none;
 }
 
-.btn-vermelho:hover {
-    background-color: #E62948;
+.estilo-dele:hover {
+    background-color: #f83e4e;
+}
+
+.estilo-dele a {
+    color: #F1FAEE;
+}
+
+.estilo-dele a:hover {
+    text-decoration: none;
+    color: #F1FDE0;
+}
+
+
+/*-- Seções --*/
+
+.diferencial {
+    background-color: #A8DADC;
+    padding: 10vh;
+}
+
+.sobre-grupo {
+    background-color: #A8DADC;
+    padding: 15vh;
+    text-align: right;
+}
+
+
+/*-- rodapé --*/
+
+.pre-rodape {
+    width: 100%;
+    height: 5vh;
+    background-color: #808080;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.pre-rodape address a {
+    color: #F1FAEE;
+}
+
+.pre-rodape address a:hover {
+    color: #000;
+}
+
+.rodape-final {
+    background-color: #457B9D;
+    width: 100%;
+    height: 20vh;
+    padding: 2.5vh;
+}
+
+.rodape-final span a {
     color: white;
+    text-align: none;
+}
+
+.rodape-final span a:hover {
+    color: rgb(102, 96, 96);
+    text-decoration: none;
 }
