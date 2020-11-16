@@ -6,7 +6,7 @@
 
 /*============================ Fontes ================================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 
 /*============================ layout ================================*/
@@ -15,15 +15,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 html,
 body,
 .capa {
     height: 100%;
+    background-color: #457b9d;
+}
+
+.capa {
+    height: 100vh;
+    width: 100%;
     overflow: auto;
-    background-color: #457B9D;
+    background: url("img/background-site-index.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .diferencial h2,
@@ -31,7 +38,16 @@ body,
     font-size: 36px;
     font-weight: 700px;
     letter-spacing: -0.04em;
-    color: #1D3557;
+    color: #1d3557;
+}
+
+.desenvolverdor-1 {
+    z-index: 10000;
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -39,7 +55,7 @@ body,
 
 .img-logo {
     width: 200px;
-    background: url('img/icones/crh.svg') no-repeat;
+    background: url("img/icones/crh.svg") no-repeat;
     display: inline-block;
     background-size: contain;
     color: transparent;
@@ -50,7 +66,7 @@ body,
 .img-logo-rodape {
     width: 200px;
     height: 90px;
-    background: url('img/icones/crh.svg'), no-repeat;
+    background: url("img/icones/crh.svg"), no-repeat;
     display: inline-block;
     background-size: cover;
     color: transparent;
@@ -77,13 +93,13 @@ body,
 
 .barra-navegacao ul li a {
     text-decoration: none;
-    color: #251C1C;
+    color: #251c1c;
     padding: 30px;
 }
 
 .barra-navegacao ul li a:hover {
     text-decoration: none;
-    color: #457B9D;
+    color: #457b9d;
 }
 
 
@@ -96,7 +112,7 @@ body,
 
 .texto-capa {
     text-align: center;
-    color: white;
+    color: rgba(14, 13, 13, 0.781);
     display: table-cell;
     vertical-align: middle;
     padding: 0px;
@@ -105,8 +121,193 @@ body,
 .navegacao {
     width: 100%;
     height: 120px;
-    background: url('img/back-nav.png') no-repeat;
+    background: url("img/back-nav.png") no-repeat;
     margin: 0px;
+    background-size: contain 100%;
+}
+
+
+/* -- cartão desenvolvedor -- */
+
+.desenvolverdor {
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartao-perfil {
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.header-cartao {
+    background: #a8dadc;
+    padding: 40px 40px;
+}
+
+.foto-perfil {
+    display: inline-block;
+    padding: 8px;
+    background: #808080;
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+}
+
+.foto-perfil img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nome {
+    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.desc {
+    font-size: 18px;
+    color: #000808;
+}
+
+.sm {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sm a {
+    color: #f2f2f2;
+    width: 56px;
+    font-size: 22px;
+    transition: 0.3s linear;
+}
+
+.sm a:hover {
+    color: #808080;
+    text-decoration: none;
+}
+
+.contato-btn {
+    display: inline-block;
+    padding: 12px 50px;
+    color: #000000;
+    border: 2px solid #f83e4e;
+    border-radius: 6px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+
+.contato-btn:hover {
+    background: #e63946;
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.cartao-footer {
+    background: #f4f4f4;
+    padding: 0px;
+}
+
+.descricao-dev {
+    padding: 10px 10px 0 10px;
+    font-size: small;
+}
+
+.capacidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    padding: 15px 30px 20px 30px;
+    text-justify: auto;
+}
+
+.item span {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+}
+
+
+/* -- Slider --*/
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    height: 100%;
+    width: 400%;
+}
+
+.slider section {
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.left,
+.right {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.arrow i {
+    font-size: 70px;
+    -webkit-user-select: none;
+    color: #000;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+.control ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%);
+}
+
+.control ul li {
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border: 2px solid #333;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.control ul li.selected {
+    background: transparent;
 }
 
 
@@ -125,7 +326,7 @@ body,
     padding: 2vh;
     border-radius: 30px;
     text-decoration: none;
-    background: #E63946;
+    background: #e63946;
     border: none;
 }
 
@@ -134,24 +335,24 @@ body,
 }
 
 .estilo-dele a {
-    color: #F1FAEE;
+    color: #f1faee;
 }
 
 .estilo-dele a:hover {
     text-decoration: none;
-    color: #F1FDE0;
+    color: #f1fde0;
 }
 
 
 /*-- Seções --*/
 
 .diferencial {
-    background-color: #A8DADC;
+    background-color: #a8dadc;
     padding: 10vh;
 }
 
 .sobre-grupo {
-    background-color: #A8DADC;
+    background-color: #a8dadc;
     padding: 15vh;
     text-align: right;
 }
@@ -170,7 +371,7 @@ body,
 }
 
 .pre-rodape address a {
-    color: #F1FAEE;
+    color: #f1faee;
 }
 
 .pre-rodape address a:hover {
@@ -178,7 +379,7 @@ body,
 }
 
 .rodape-final {
-    background-color: #457B9D;
+    background-color: #457b9d;
     width: 100%;
     height: 20vh;
     padding: 2.5vh;
