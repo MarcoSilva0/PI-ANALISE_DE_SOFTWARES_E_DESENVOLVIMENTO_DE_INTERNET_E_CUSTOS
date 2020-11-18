@@ -28,9 +28,6 @@ body,
 .capa {
     height: 100vh;
     width: 100%;
-    overflow: auto;
-    background: url("img/background-site-index.png") no-repeat;
-    background-size: 100% 100%;
 }
 
 .diferencial h2,
@@ -116,6 +113,7 @@ body,
     display: table-cell;
     vertical-align: middle;
     padding: 0px;
+    animation: backwards;
 }
 
 .navegacao {
@@ -274,7 +272,7 @@ body,
 .arrow i {
     font-size: 70px;
     -webkit-user-select: none;
-    color: #000;
+    color: rgb(39, 35, 35);
 }
 
 .left {
@@ -393,4 +391,68 @@ body,
 .rodape-final span a:hover {
     color: rgb(102, 96, 96);
     text-decoration: none;
+}
+
+
+/*-- Pag orcamento --*/
+
+.orcamento {
+    width: 100%;
+    height: 100vh;
+    background: #457B9D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.orcamento-caixa {
+    width: 60%;
+    height: 80%;
+    background: #F1FAEE;
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.orcamento h1 {
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    background: #A8DADC;
+}
+
+
+/*-- Medias queries -- */
+
+
+/* Telefones em paisagem e abaixo */
+
+@media (max-width: 480px) {
+    /* estilos aqui */
+}
+
+
+/* Telefones em paisagem a tablet em retrato */
+
+@media (max-width: 767px) {
+    /* estilos aqui */
+}
+
+
+/* Tablet em retrato a paisagem e desktop */
+
+@media (min-width: 768px) and (max-width: 979px) {
+    /* estilos aqui */
+}
+
+
+/* Desktop grande */
+
+@media (min-width: 1200px) {
+    .carousel {
+        overflow: hidden;
+        position: relative;
+        height: 105vh;
+    }
 }
