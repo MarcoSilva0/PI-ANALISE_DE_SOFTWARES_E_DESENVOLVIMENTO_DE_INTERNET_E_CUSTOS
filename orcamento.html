@@ -18,7 +18,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <title>Menu Inicial</title>
+    <title>Orçamento</title>
 </head>
 
 <body>
@@ -40,28 +40,29 @@
     </header>
     <!--/Header e nav -->
 
-    <section class="orcamento">
-        <div class="orcamento-caixa">
-            <h1>Faça seu orçamento</h1>
+    <section class="sessao-orcamento" id="orcamento">
+        <div class="orcamento-wrapper">
+            <h1>Faça um orçamento</h1>
             <form>
                 <label for="qtde">Qtde de Páginas</label>
-                <input type="text" name="qtde" id="qtde">
-                <label for="js">Preciso de um script</label>
+                <input type="number" min="1" name="qtde" id="qtde">
+                <label for="js">Preciso de um script JS</label>
                 <input type="checkbox" name="js" id="js">
                 <label>Layout</label>
-                <div class="grupo-layout">
+                <div class="group-layout">
                     <div>
                         <input type="radio" name="layout" id="layout-sim">
-                        <label for="layout-sim">Preciso de um Layout</label>
+                        <label for="layout-sim">Preciso de um layout</label>
                     </div>
                     <div>
                         <input type="radio" name="layout" id="layout-nao">
-                        <label for="layout-nao">já tenho um Layout</label>
+                        <label for="layout-nao">Já tenho um layout</label>
                     </div>
                 </div>
                 <label for="prazo">Prazo</label>
-                <input type="range" name="prazo" id="prazo">
-                <button class="botao-orcamento btn" type="submit">Enviar</button>
+                <input type="range" name="prazo" id="prazo" min="1" max="10">
+                <label id="preco">R$ 0,00</label>
+                <button class="btn btn-orcamento" type="submit">Enviar</button>
             </form>
         </div>
     </section>
@@ -104,6 +105,7 @@
         </div>
     </footer>
     <!--/Rodape-->
+    <script src="js/orcamento.js"></script>
 </body>
 
 </html>
