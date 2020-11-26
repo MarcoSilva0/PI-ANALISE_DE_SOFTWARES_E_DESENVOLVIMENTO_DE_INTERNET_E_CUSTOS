@@ -30,7 +30,7 @@
             </a>
             <ul>
                 <li>
-                    <a href="#">Projetos</a>
+                    <a href="projetos.html">Projetos</a>
                 </li>
                 <li>
                     <a href="index.html">Home</a>
@@ -39,35 +39,35 @@
         </nav>
     </header>
     <!--/Header e nav -->
-
-    <section class="sessao-orcamento" id="orcamento">
-        <div class="orcamento-wrapper">
-            <h1>Faça um orçamento</h1>
-            <form>
-                <label for="qtde">Qtde de Páginas</label>
-                <input type="number" min="1" name="qtde" id="qtde">
-                <label for="js">Preciso de um script JS</label>
-                <input type="checkbox" name="js" id="js">
-                <label>Layout</label>
-                <div class="group-layout">
-                    <div>
-                        <input type="radio" name="layout" id="layout-sim">
-                        <label for="layout-sim">Preciso de um layout</label>
+    <div class="capa">
+        <section class="sessao-orcamento" id="orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form>
+                    <label for="qtde">Quantidade de serviços</label>
+                    <input type="number" min="1" name="qtde" id="qtde">
+                    <label for="js">É presencial? Se sim marque ao lado</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>Complexibilidade</label>
+                    <div class="group-level">
+                        <div>
+                            <input type="radio" name="layout" id="easy">
+                            <label for="easy">Easy</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="hard">
+                            <label for="hard">Hard</label>
+                        </div>
                     </div>
-                    <div>
-                        <input type="radio" name="layout" id="layout-nao">
-                        <label for="layout-nao">Já tenho um layout</label>
-                    </div>
-                </div>
-                <label for="prazo">Prazo</label>
-                <input type="range" name="prazo" id="prazo" min="1" max="10">
-                <label id="preco">R$ 0,00</label>
-                <button class="btn btn-orcamento" type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
+                    <label for="prazo">Tempo de contrato</label>
+                    <input type="range" name="prazo" id="prazo" min="1" max="10">
+                    <label id="preco">R$ 0,00</label>
+                    <button class="btn-orcamento" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
 
-
+    </div>
     <!--Rodape-->
     <div class="pre-rodape">
         <address><a href="mailto:teste@adminteste.com">Qualquer dúvida nos envie um email.</a></address>

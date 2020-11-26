@@ -400,16 +400,11 @@
         position: absolute;
         top: -2.5rem;
         left: 2rem;
-        background: #6a3093;
-        background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-        background: linear-gradient(to left, #a044ff, #6a3093);
+        background: #A8DADC;
         padding: 0 3rem;
-        color: #fff;
-        font-family: var(--font-primary);
-        font-size: 3rem;
-        font-weight: lighter;
         box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
         border-radius: 10px;
+        color: #262626;
     }
     
     .sessao-orcamento form {
@@ -440,6 +435,10 @@
         padding: 1rem;
         cursor: pointer;
         grid-column: 2;
+        background-color: #A8DADC;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
     }
     /*-- Medias queries -- */
     /* Telefones em paisagem e abaixo */
