@@ -473,6 +473,19 @@
         margin-bottom: 2rem;
     }
     
+    .sessao-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sessao-header h1 {
+        font-size: 3rem;
+        color: #4b4b4b;
+        border-bottom: solid 3px #A8DADC;
+        margin-bottom: 1.5rem;
+    }
+    
     .card {
         width: 18rem;
         height: 25rem;
@@ -519,7 +532,7 @@
     .card-info h3 {
         font-family: var(--font-action);
         font-weight: bolder;
-        color: #ff4081;
+        color: #1559b9;
         margin-bottom: 1.5rem;
     }
     
@@ -533,10 +546,9 @@
     
     .btn {
         background: #6a3093;
-        background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-        background: linear-gradient(to left, #a044ff, #6a3093);
-        font-family: var(--font-action);
-        color: #eee;
+        background: -webkit-linear-gradient(to right, #1d3557, #1559b9);
+        background: linear-gradient(to left, #1d3557, #1559b9);
+        color: #f1fde0;
         border-radius: 0.5rem;
         border: none;
         box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
@@ -545,6 +557,7 @@
     .card-info button {
         width: 8rem;
         height: 2.5rem;
+        color: #ffffff;
     }
     
     .card:hover .card-info {
