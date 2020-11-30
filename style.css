@@ -112,7 +112,7 @@
     .navegacao {
         width: 100%;
         height: 120px;
-        background: url("img/back-nav.png") no-repeat;
+        background: #f1fde0;
         margin: 0px;
         background-size: contain 100%;
     }
@@ -360,14 +360,14 @@
     }
     
     .rodape-final {
-        background-color: #457b9d;
+        background-color: #f1fde0;
         width: 100%;
         height: 20vh;
         padding: 2.5vh;
     }
     
     .rodape-final span a {
-        color: white;
+        color: #808080;
         text-align: none;
     }
     
@@ -440,31 +440,6 @@
         border: none;
         box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
     }
-    /*-- Medias queries -- */
-    /* Telefones em paisagem e abaixo */
-    
-    @media (max-width: 480px) {
-        /* estilos aqui */
-    }
-    /* Telefones em paisagem a tablet em retrato */
-    
-    @media (max-width: 767px) {
-        /* estilos aqui */
-    }
-    /* Tablet em retrato a paisagem e desktop */
-    
-    @media (min-width: 768px) and (max-width: 979px) {
-        /* estilos aqui */
-    }
-    /* Desktop grande */
-    
-    @media (min-width: 1200px) {
-        .carousel {
-            overflow: hidden;
-            position: relative;
-            height: 105vh;
-        }
-    }
     /*-- Projetos --*/
     
     .projetos {
@@ -481,7 +456,7 @@
     
     .sessao-header h1 {
         font-size: 3rem;
-        color: #4b4b4b;
+        color: #04071f;
         border-bottom: solid 3px #A8DADC;
         margin-bottom: 1.5rem;
     }
@@ -504,7 +479,6 @@
         width: 100%;
         height: 100%;
         border-radius: 0.5rem;
-        opacity: 0.8;
         transition: opacity 0.3s;
     }
     
@@ -554,6 +528,16 @@
         box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
     }
     
+    .btn a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .btn a:hover {
+        color: #808080;
+        text-decoration: none;
+    }
+    
     .card-info button {
         width: 8rem;
         height: 2.5rem;
@@ -564,4 +548,29 @@
         bottom: 2rem;
         opacity: 1;
         visibility: visible;
+    }
+    /*-- Medias queries -- */
+    /* Telefones em paisagem e abaixo */
+    
+    @media (max-width: 480px) {
+        /* estilos aqui */
+    }
+    /* Telefones em paisagem a tablet em retrato */
+    
+    @media (max-width: 767px) {
+        /* estilos aqui */
+    }
+    /* Tablet em retrato a paisagem e desktop */
+    
+    @media (min-width: 768px) and (max-width: 979px) {
+        /* estilos aqui */
+    }
+    /* Desktop grande */
+    
+    @media (min-width: 1200px) {
+        .carousel {
+            overflow: hidden;
+            position: relative;
+            height: 105vh;
+        }
     }

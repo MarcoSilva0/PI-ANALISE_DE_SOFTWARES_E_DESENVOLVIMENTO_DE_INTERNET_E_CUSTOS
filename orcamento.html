@@ -26,7 +26,9 @@
     <header class="navegacao">
         <nav class="barra-navegacao">
             <a href="index.html">
-                <span class="img-logo"> Chronos Developers </span>
+                <span class="img-logo-rodape">
+                    Chronos Developers
+                </span>
             </a>
             <ul>
                 <li>
@@ -43,7 +45,11 @@
         <section class="sessao-orcamento" id="orcamento">
             <div class="orcamento-wrapper">
                 <h1>Faça um orçamento</h1>
-                <form>
+                <form action="envia_fala.php" method="POST" name="form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="">
                     <label for="qtde">Quantidade de serviços</label>
                     <input type="number" min="1" name="qtde" id="qtde">
                     <label for="js">É presencial? Se sim marque ao lado</label>
@@ -62,7 +68,7 @@
                     <label for="prazo">Tempo de contrato</label>
                     <input type="range" name="prazo" id="prazo" min="1" max="10">
                     <label id="preco">R$ 0,00</label>
-                    <button class="btn-orcamento" type="submit">Enviar</button>
+                    <button class="btn-orcamento" type="submit" name="submit" value="submit" onclick="alert('Obrigado pelo email!!');">Enviar</button>
                 </form>
             </div>
         </section>
@@ -96,9 +102,9 @@
                 </div>
                 <div class="col-md-4">
                     <h4>Desenvolvedores</h4>
-                    <span><a href="">Marco Silva</a></span><br>
-                    <span><a href="">Suelen</a></span><br>
-                    <span><a href="">Agradecimento ao Luiz Fernando Hilario</a></span>
+                    <span><a href="desenvolvedor.html">Marco Silva</a></span><br>
+                    <span><a href="desenvolvedor.html">Suelen</a></span><br>
+                    <span><a href="desenvolvedor.html">Lucas</a></span><br>
                     </ul>
                 </div>
             </div>
